@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>notevana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="modal">
+      <div class="modal-content effect-glass">
+        <section class="exit-container">
+          <img
+            src="images/close-icon.png"
+            alt="close-icon"
+            class="modal-exit"
+          />
+        </section>
+        <div class="past-notes-modal-content-center modal-center">
+          <div class="modal-past-notes-container">
+            <div class="past-notes-sidebar">
+              <div class="past-notes-boxes">
+                <div
+                  id="past-notes-search-button-container"
+                  class="buttons-past"
+                >
+                  <div class="past-notes-button">Search</div>
+                  <div class="search-icon">&telrec;</div>
+                </div>
+                <div class="past-notes-box-wrapper">
+                  <div class="past-notes-box">
+                    <div class="past-notes-box-title"></div>
+                    <div class="past-notes-box-body"></div>
+                    <div class="past-notes-box-date"></div>
+                  </div>
+                </div>
+
+                <div
+                  id="past-notes-trash-button-container"
+                  class="buttons-past"
+                >
+                  <div class="past-notes-button">Trash</div>
+                </div>
+              </div>
+              <div class="past-notes-trash effect-glass">
+                <div class="past-notes-trash-box">
+                  <div class="past-notes-trash-box-title"></div>
+                  <div class="past-notes-trash-box-body"></div>
+                  <div class="past-notes-trash-box-date"></div>
+                </div>
+              </div>
+            </div>
+            <div id="past-notes-space-container" class="theme5">
+              <div id="past-notes-space">
+                <div class="past-notes-preview-box"></div>
+                <div class="past-notes-preview-options">
+                  <div class="past-notes-preview-open">
+                    <h3 class="past-open button">Open</h3>
+                  </div>
+                  <div class="past-notes-preview-delete">
+                    <h3 class="past-delete button">Delete</h3>
+                  </div>
+                </div>
+                <div class="past-notes-preview-delete-ask-if-sure effect-glass">
+                  <div class="ask-if-sure-container">
+                    <h4 class="ask-if-sure">
+                      Are you sure you would like to delete this note?
+                    </h4>
+                    <div class="yes-no">
+                      <h3 class="yes yes-no-button">Yes</h3>
+                      <h3 class="no yes-no-button">No</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-modal-content-center modal-center">
+          <!--<span class="modal-exit">&times;</span>-->
+          <div id="more-modal-sidebar" class="panBackground theme5">
+            <!--more options-->
+            <ul class="more-modal-options">
+              <li id="themes-button" class="modal-selection active-selection">
+                Themes
+              </li>
+              <li id="settings-button" class="modal-selection">Settings</li>
+              <li id="help-button" class="modal-selection">Help</li>
+              <li id="about-me-button" class="modal-selection">About Me</li>
+            </ul>
+          </div>
+
+          <!--more space-->
+          <div id="more-modal-space-container">
+            <!--More Themes Container-->
+            <section id="more-themes-container">
+              <div id="more-themes">
+                <div id="themes">
+                  <div class="theme-box theme1"></div>
+                  <div class="theme-box theme2"></div>
+                  <div class="theme-box theme3"></div>
+                  <div class="theme-box theme4"></div>
+                  <div class="theme-box theme5"></div>
+                  <div class="theme-box theme6"></div>
+                  <div class="theme-box theme7"></div>
+                  <div class="theme-box theme8"></div>
+                  <div class="theme-box theme9"></div>
+                </div>
+              </div>
+            </section>
+            <!--More Settings Container-->
+            <section id="more-settings-container">
+              <div id="more-settings">
+                <div id="settings">
+                  <div id="settings-defaults" class="settings-subsection">
+                    <h3>Defaults</h3>
+                  </div>
+                  <div id="settings-general" class="settings-subsection">
+                    <h3>General</h3>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--More Help Container-->
+            <section id="more-help-container">
+              <div id="more-help">
+                <div id="help">
+                  <!--Shortcuts-->
+                  <section id="help-shortcuts" class="help-section">
+                    <div class="help-section-label">
+                      <div class="hsl-name">Shortcuts</div>
+                      <div class="hsl-symbol">+</div>
+                    </div>
+                    <div
+                      class="help-section-content"
+                      id="help-section-content-shortcuts"
+                    >
+                      <ul id="help-shortcuts-list">
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + S</div>
+                          <div class="shrtctequal">Save</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + C</div>
+                          <div class="shrtctequal">Copy</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + V</div>
+                          <div class="shrtctequal">Paste</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + X</div>
+                          <div class="shrtctequal">Cut</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + Z</div>
+                          <div class="shrtctequal">Undo</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + Y</div>
+                          <div class="shrtctequal">Redo</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + A</div>
+                          <div class="shrtctequal">Select all</div>
+                        </li>
+                        <li class="help-shortcut">
+                          <div class="shrtct">Ctrl/Command + Shift + L</div>
+                          <div class="shrtctequal">
+                            Select all occurences of current selection
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                  <!--Frequently Asked Questions-->
+                  <section id="help-faq" class="help-section">
+                    <div class="help-section-label">
+                      <div class="hsl-name">Frequently Asked Questions</div>
+                      <div class="hsl-symbol">+</div>
+                    </div>
+                    <div
+                      class="help-section-content"
+                      id="help-section-content-faq"
+                    >
+                      <div id="help-faq-list">
+                        <div class="faq-question">
+                          <h3>How do I save notes?</h3>
+                          <p>notevana automatically saves your notes.</p>
+                        </div>
+                        <div class="faq-question">
+                          <h3>How do I delete notes?</h3>
+                          <p>
+                            Navigate to past notes and click the trash bin icon.
+                            When asked "Are you sure?", click "Yes".
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--Manual-->
+                  <section id="help-manual" class="help-section">
+                    <div class="help-section-label">
+                      <div class="hsl-name">Manual</div>
+                      <div class="hsl-symbol">+</div>
+                    </div>
+                    <div
+                      class="help-section-content"
+                      id="help-section-content-manual"
+                    >
+                      <div>Manual coming soon</div>
+                    </div>
+                  </section>
+                  <!--Release Notes-->
+                  <section id="help-release-notes" class="help-section">
+                    <div class="help-section-label">
+                      <div class="hsl-name">Release Notes</div>
+                      <div class="hsl-symbol">+</div>
+                    </div>
+                    <div
+                      class="help-section-content"
+                      id="help-section-content-release-notes"
+                    >
+                      <ul class="help-release-notes-list">
+                        <li class="help-release-notes">
+                          v1.0.0 - Initial Release
+                        </li>
+                        <li class="help-release-notes">v1.0.1 - Added Theme</li>
+                        <li class="help-release-notes">v1.0.2 - Added Font</li>
+                        <li class="help-release-notes">v1.0.3 - Added Help</li>
+                        <li class="help-release-notes">
+                          v1.0.4 - Added About Me
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <!--More About Me Container-->
+            <section id="more-about-me-container">
+              <div id="more-about-me">
+                <div id="about-me">
+                  <div id="about-me-description" class="about-me-section">
+                    <h4 class="about-me-section-label">About Me</h4>
+                    <p>
+                      Hello, my name is Imhotep Benjamin. Imhotep Benjamin, a
+                      freelance artisan immersed in the realm of software and
+                      web development, confidently sculpting distinctive
+                      soundscapes under the alias updnbxnji. Driven by a sincere
+                      quest for artistic depth, my creations elegantly venture
+                      beyond conventions, embodying principles of resilience and
+                      goodwill. In this intriguing journey, I believe genuine
+                      artistry thrives in the strength to forge new
+                      perspectives.
+                    </p>
+                  </div>
+                  <div id="about-me-links" class="about-me-section">
+                    <h4 class="about-me-section-label">Links</h4>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://github.com/imhotepbenjamin"
+                          target="_blank"
+                          rel="noopener"
+                          >Github</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/imhotepbenjamin/"
+                          target="_blank"
+                          rel="noopener"
+                          >LinkedIn</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="about-me-donate" class="about-me-section">
+                    <h4 class="about-me-section-label">Donate</h4>
+                    <form
+                      action="https://www.paypal.com/donate"
+                      method="post"
+                      target="_top"
+                    >
+                      <input
+                        type="hidden"
+                        name="business"
+                        value="6NPQLYFFUURXN"
+                      />
+                      <input type="hidden" name="no_recurring" value="0" />
+                      <input
+                        type="hidden"
+                        name="item_name"
+                        value="Imhotep's innovative programming journey. Your support shapes unique code landscapes, fostering creativity and exploration."
+                      />
+                      <input type="hidden" name="currency_code" value="USD" />
+                      <input
+                        type="image"
+                        src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                        border="0"
+                        name="submit"
+                        title="PayPal - The safer, easier way to pay online!"
+                        alt="Donate with PayPal button"
+                      />
+                      <img
+                        alt=""
+                        border="0"
+                        src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+                        width="1"
+                        height="1"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="notes-container" class="theme5">
+      <div class="notes-nav-top navbar">
+        <span class="new-note">
+          <a class="button">
+            <p>New Note</p>
+            <p><span class="plus">&plus;</span></p>
+          </a>
+        </span>
+        <span class="past-notes">
+          <a class="button">
+            <p>Past Notes</p>
+          </a>
+        </span>
+      </div>
+      <div class="toolbar"></div>
+      <div id="notes-text-container">
+        <help-section-label for="notes-text" id="notes-text-help-section-label"
+          ><p>Notes</p></help-section-label
+        >
+        <textarea
+          id="notes-text"
+          placeholder="What's on your mind?"
+          type="text"
+          spellcheck
+        ></textarea>
+        <div id="output" class="fontHeaderSize"></div>
+        <div class="bottom-text-bar">
+          <div id="bottom-text-bar-counters">
+            <div class="counter-container">
+              <div class="count">
+                Char:<span class="counter" id="char-count">0</span>
+              </div>
+            </div>
+            <div class="counter-container">
+              <div class="count">
+                Word:<span class="counter" id="word-count">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes-nav-bottom navbar">
+        <span class="share-notes">
+          <a class="button">
+            <p>Share Notes</p>
+          </a>
+        </span>
+        <span class="more-notes">
+          <a class="button">
+            <p>More</p>
+          </a>
+        </span>
+      </div>
+    </div>
+    <script src="/main.js" type="module"></script>
+  </body>
+</html>
