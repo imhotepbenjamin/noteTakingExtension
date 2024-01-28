@@ -8,7 +8,7 @@
     "storage"
   ],
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "./notevana/dist/modal.html",
     "default_icon": {
       "16": "images/updn-notes-icon.png",
       "48": "images/updn-notes-icon.png",
