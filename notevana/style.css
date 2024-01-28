@@ -68,9 +68,6 @@ html, body {
   align-items: stretch;
   gap: 10%;
 }
-.notes-nav-top{
-
-}
 .new-note{
   flex: 3 1 auto;
 }
@@ -159,8 +156,6 @@ flex: 6 1 auto;
   height: 100%;
   margin-left: 5%;
 }
-.notes-nav-button{
-}
 .share-notes {
   flex: 1 1 auto;
 }
@@ -245,9 +240,6 @@ z-index: 10;
   z-index: 15;
   position: relative;
 }
-.past-notes-box-title, .past-notes-box-date {
-  /*padding: 5%;*/
-}
 .past-notes-box-title {
   font-size: 120%;
   font-weight: 800;
@@ -287,9 +279,6 @@ z-index: 10;
   font-weight: 500;
   letter-spacing: 0.1rem;
 }
-#past-notes-search-button-container{
-
-}
 .search-icon {
   font-size: 170%;
   width: 30%;
@@ -297,9 +286,6 @@ z-index: 10;
   display: flex;
   justify-content: center;
   align-content: center;
-}
-#past-notes-trash-button-container {
-
 }
 .past-notes-button {
   position: relative;
@@ -425,9 +411,6 @@ z-index: 10;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   padding: 10%;
-}
-.yes-no-button:hover {
-  
 }
 .yes {
   flex: 1 1 auto;
@@ -641,12 +624,6 @@ cursor: pointer;
   display: flex;
   padding: 5%;
 }
-#settings-defaults {
-
-}
-#settings-general {
-
-}
 #more-help-container {
   height: 100%;
   width: 100%;
@@ -687,8 +664,6 @@ hr {
   align-items: center;
   background: #ffffff5d;
   border-radius: 7px;
-}
-#help-shortcuts {
 }
 .help-section-label{
   width: 100%;
@@ -791,17 +766,8 @@ hr {
   align-items: center;
   gap: 5%;
 }
-#about-me-description {
-  
-}
-#about-me-links {
-
-}
 #about-me-links a{
   color: #000;
-}
-#about-me-donate {
-  
 }
 .about-me-section {
   width: 100%;
