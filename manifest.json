@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "CRXJS Vanilla JS Example",
+  "name": "notevana",
   "version": "1.0.0",
   "description": "Notevana: Elevate your stored thoughts, ideas, and info with a cool twist. Unleash creativity in a professional groove!",
   "permissions": [
@@ -10,9 +10,9 @@
   "action": {
     "default_popup": "./notevana/dist/modal.html",
     "default_icon": {
-      "16": "images/updn-notes-icon.png",
-      "48": "images/updn-notes-icon.png",
-      "128": "images/updn-notes-icon.png"
+      "16": "./notevana/images/updn-notes-icon.png",
+      "48": "./notevana/images/updn-notes-icon.png",
+      "128": "./notevana/images/updn-notes-icon.png"
     }
   },
   "background": {
