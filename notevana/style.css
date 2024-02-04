@@ -1,7 +1,5 @@
 
 html, body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -24,7 +22,7 @@ html, body {
 .button {
   color: #ffffff;
   background: #0000009f;
-  border-radius: 7px;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%; 
   height: 100%;
@@ -44,7 +42,8 @@ html, body {
   backdrop-filter: blur(20px);
 }
 .button:hover {
-  box-shadow: 0px 0 10px rgba(0, 0, 0, .3); /* Add a box shadow on hover */
+  box-shadow: 0px 0 10px rgba(0, 0, 0, .3);
+   /* Add a box shadow on hover */
 }
 .button p{
   margin: 5%;
@@ -156,10 +155,10 @@ flex: 6 1 auto;
   height: 100%;
   margin-left: 5%;
 }
-.share-notes {
+#transcribe-notes {
   flex: 1 1 auto;
 }
-.more-notes{
+#more-notes{
   flex: 3 1 auto;
 }
 #modal{
@@ -311,17 +310,18 @@ z-index: 10;
   height: 100%;
 }
 #past-notes-space {
-  padding: 5%;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5%;
   background-color: #5a5a5a93;
+  position: relative;
 }
 .past-notes-preview-box {
-  flex: 2 1 auto;
-  width: 100%;
+  width: 90%;
   height: 80%;
   background: #ffffff;
   border-radius: 7px;
@@ -329,10 +329,9 @@ z-index: 10;
   overflow-y: scroll;
 }
 .past-notes-preview-options {
-  flex: 1 1 auto;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
   border-radius: 7px;
   height: 10%;
   gap: 5%;
@@ -356,7 +355,7 @@ z-index: 10;
   justify-content: center;
   align-items: center;
 }
-.past-notes-preview-delete-ask-if-sure {
+.past-notes-preview-friction {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -365,22 +364,21 @@ z-index: 10;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 0;
 }
 .ask-if-sure-container {
-  width: 100%;
-  height: 50%;
+  width: 75%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 5%;
+  justify-content: ce;
+  gap: 10%;
   background: #ffffff5d;
   padding: 5%;
   border-radius: 7px;
 }
 .ask-if-sure {
-  padding: 5%;
   border-radius: 7px;
   width: 100%;
 }
@@ -413,14 +411,12 @@ z-index: 10;
   padding: 10%;
 }
 .yes {
-  flex: 1 1 auto;
   background: #ff00009f;
 }
 .yes:hover {
   background: #ff00006b;
 }
 .no {
-  flex: 1 1 auto;
 }
 .no:hover {
   background: #0000006b;

@@ -5,7 +5,8 @@
   "description": "Notevana: Elevate your stored thoughts, ideas, and info with a cool twist. Unleash creativity in a professional groove!",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "audioCapture"
   ],
   "action": {
     "default_popup": "./notevana/dist/modal.html",
